@@ -199,3 +199,79 @@ footer p { color: #c5cbe0; font-size: .85rem; }
   .full-width { grid-column: auto; }
   .section-heading { align-items: flex-start; flex-direction: column; }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #202944;
+}
+
+header {
+  padding: 22px 6%;
+  background: #202944;
+  color: white;
+}
+
+header a {
+  color: white;
+  margin-right: 18px;
+  text-decoration: none;
+}
+
+main, section {
+  padding: 24px;
+}
+
+.hero {
+  padding: 45px 6%;
+  background: linear-gradient(120deg, #202944, #7056d8);
+  color: white;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.event-card, .panel, .schedule-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 14px #0000000d;
+}
+
+button, .primary-button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #6848e8;
+  color: white;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  padding: 10px;
+  margin: 6px 0;
+  max-width: 100%;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #202944;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
