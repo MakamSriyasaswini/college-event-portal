@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: event-portal
-          image: makamsriya/college-event-portal:initial
+          image: makamsriya/college-event-portal:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
